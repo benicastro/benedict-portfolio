@@ -1,7 +1,7 @@
 [
   {
     "slug": "public-web-data-collection",
-    "order": 1,
+    "order": 2,
     "title": "Public web and platform data collection",
     "shortTitle": "Web & platform data collection",
     "category": "Web Scraping & Automation",
@@ -25,7 +25,7 @@
   },
   {
     "slug": "regulated-industry-account-intelligence",
-    "order": 2,
+    "order": 3,
     "title": "Regulated-industry account intelligence",
     "shortTitle": "ICP & account intelligence",
     "category": "B2B Research & Sales Intelligence",
@@ -49,7 +49,7 @@
   },
   {
     "slug": "crm-data-enrichment-quality",
-    "order": 3,
+    "order": 5,
     "title": "CRM-ready enrichment and data quality",
     "shortTitle": "CRM data quality workflows",
     "category": "Data Processing & CRM Operations",
@@ -69,7 +69,7 @@
     "deliverables": ["Cleaned and standardized account/contact files", "HubSpot-ready import formats", "Validation flags and audit columns"],
     "result": "Delivered structured, reviewable data handoffs designed to make enrichment and CRM ingestion more reliable. Sample records shown elsewhere on this website are fictional demonstration data.",
     "visual": "table",
-    "feature": true
+    "feature": false
   },
   {
     "slug": "dotnet-sql-reporting-engineering",
@@ -97,7 +97,7 @@
   },
   {
     "slug": "energy-account-intelligence-pipeline",
-    "order": 5,
+    "order": 1,
     "title": "Energy Account Intelligence Pipeline",
     "shortTitle": "Energy account intelligence pipeline",
     "category": "Python Data Engineering & Account Intelligence",

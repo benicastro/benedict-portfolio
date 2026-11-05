@@ -48,7 +48,13 @@ function caseIndex(){
 }
 function caseDetail(p) {
  const other=projects.filter(x=>x.slug!==p.slug).slice(0,2);
- const body=`<section class="detail-header"><div class="container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="${href('/projects/')}">Projects</a><span>/</span><span>${e(p.shortTitle)}</span></nav><div class="eyebrow"><span class="eyebrow-dot"></span>CASE STUDY / ${String(p.order).padStart(2,'0')}</div><h1>${e(p.title)}<span class="accent-period">.</span></h1><p class="detail-intro">${e(p.intro)}</p><div class="detail-meta"><span><strong>TYPE</strong>${e(p.context)}</span><span><strong>FOCUS</strong>${e(p.category)}</span><span><strong>PERIOD</strong>${e(p.period)}</span></div></div></section>
+ const artifactActions = p.links?.length
+  ? `<div class="hero-actions detail-actions">
+       <a class="btn btn-primary" href="${e(p.links[0].url)}" target="_blank" rel="noopener noreferrer">View source code <span aria-hidden="true">↗</span></a>
+       ${p.links[1] ? `<a class="text-link" href="${e(p.links[1].url)}" target="_blank" rel="noopener noreferrer">Explore sample dataset ↗</a>` : ''}
+     </div>`
+  : '';
+ const body=`<section class="detail-header"><div class="container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="${href('/projects/')}">Projects</a><span>/</span><span>${e(p.shortTitle)}</span></nav><div class="eyebrow"><span class="eyebrow-dot"></span>CASE STUDY / ${String(p.order).padStart(2,'0')}</div><h1>${e(p.title)}<span class="accent-period">.</span></h1><p class="detail-intro">${e(p.intro)}</p>${artifactActions}<div class="detail-meta"><span><strong>TYPE</strong>${e(p.context)}</span><span><strong>FOCUS</strong>${e(p.category)}</span><span><strong>PERIOD</strong>${e(p.period)}</span></div></div></section>
  <section class="detail-visual-section"><div class="container">${visual(p.visual)}<p class="visual-caption">Illustrative technical diagram, not an application screenshot or client dataset.</p></div></section>
  <section class="section detail-body-section"><div class="container detail-columns"><aside class="detail-sidebar"><span class="detail-side-label">IN THIS CASE STUDY</span><a href="#problem">01 — The challenge</a><a href="#contribution">02 — My contribution</a><a href="#approach">03 — The approach</a><a href="#outputs">04 — Outcomes & outputs</a><div class="detail-sidebar-note">${p.context.startsWith('Independent')?'Public-source project with documented limitations and fictional test fixtures.':'Confidential client identifiers and proprietary artifacts are intentionally excluded.'}</div></aside><div class="detail-main">
  <section id="problem" class="detail-block"><span class="detail-kicker">01 / THE CHALLENGE</span><h2>What needed solving</h2><p>${e(p.challenge)}</p></section>
