@@ -6,9 +6,9 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const dist=path.join(root,'dist');
 const base=(process.env.SITE_BASE||'/').replace(/\/$/,'');
 const prefix=base==='/'?'':base;
+const projectData=JSON.parse(fs.readFileSync(path.join(root,'src/data/projects.json'),'utf8'));
 const pages=['','projects','case-studies','about','skills','resume','contact',
-'projects/public-web-data-collection','projects/regulated-industry-account-intelligence',
-'projects/crm-data-enrichment-quality','projects/dotnet-sql-reporting-engineering'];
+  ...projectData.map(project=>`projects/${project.slug}`)];
 for(const route of pages){
  const file=path.join(dist,route,'index.html');
  assert(fs.existsSync(file),`missing page ${route}`);

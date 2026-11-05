@@ -14,8 +14,9 @@ My work connects source discovery and extraction with data validation, structure
 | Regulated-industry account intelligence | ICP research, source-backed company/contact discovery, and decision-maker mapping |
 | CRM-ready enrichment and data quality | Standardization, cross-source validation, deduplication, and import-ready datasets |
 | .NET and SQL reporting engineering | ASP.NET MVC, C#, SQL Server reporting logic, and PDF/Excel exports |
+| Energy Account Intelligence Pipeline (independent) | Public EIA-860 ETL, ownership relationships, 72 tests, and inspectable sample records |
 
-These case studies are anonymized summaries of professional experience, not public reproductions of client systems or datasets. An interactive data-quality example on the site uses fictional records and is labeled as a demonstration.
+The four professional case studies are anonymized summaries, not public reproductions of client systems or datasets. The separate Energy Account Intelligence Pipeline is an independently developed project with public source code, tests, and EIA-based sample records. The website's interactive data-quality demonstration uses fictional records.
 
 ## Website features
 
@@ -90,11 +91,11 @@ For initial setup and troubleshooting, see [`DEPLOY_TO_GITHUB.md`](DEPLOY_TO_GIT
 - Proprietary source code, confidential client records, and private contact datasets are not published.
 - No undisclosed client performance metrics, screenshots, or testimonials are invented.
 - Fictional sample records are identified as demonstrations, not as production results.
-- Any future public code samples will be independently developed or published with appropriate permission.
+- The public Python pipeline is independently developed using public EIA data and fictional test fixtures; confidential client code is not published.
 
 ## Planned improvements
 
-- Add a fully reproducible independent Python data pipeline with tests and synthetic/openly licensed sample records.
+- Extend the independently developed EIA-860 pipeline with generator-status interpretation and additional evidence-based account qualification.
 - Add sanitized technical diagrams and project-specific screenshots where permitted.
 - Refresh the downloadable résumé and review all public contact details.
 - Perform additional accessibility, SEO, and mobile-performance audits.

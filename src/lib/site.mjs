@@ -37,12 +37,13 @@ export function taglist(arr) {return `<div class="taglist">${arr.map(pill).join(
 
 export function visual(type, small=false) {
  const label = {
-  code:'PYTHON / COLLECTION', network:'RESEARCH / ICP MAPPING', table:'DATA / QUALITY ASSURANCE',report:'APPLICATION / REPORTING'
+  code:'PYTHON / COLLECTION', network:'RESEARCH / ICP MAPPING', table:'DATA / QUALITY ASSURANCE',report:'APPLICATION / REPORTING', pipeline:'PYTHON / ACCOUNT INTELLIGENCE'
  }[type]||'DATA WORKFLOW';
  let body='';
  if (type==='code') body=`<div class="code-lines"><span><b>def</b> extract(source):</span><span class="indent"><i>response</i> = inspect(source)</span><span class="indent"><b>return</b> parse_json(response)</span><span class="muted-line"># validate → normalize → export</span></div>`;
  if (type==='network') body=`<div class="network-visual"><div class="network-node n1">UTILITY</div><div class="network-node n2">REGULATOR</div><div class="network-node n3">PROJECT</div><div class="network-node n4">ICP FIT</div><svg viewBox="0 0 340 150" preserveAspectRatio="none" aria-hidden="true"><path d="M81 31 L170 76 L270 30 M170 76 L88 126 M170 76 L267 126"/></svg></div>`;
  if (type==='table') body=`<div class="mini-table"><div class="mrow mhead"><span>ACCOUNT</span><span>SEGMENT</span><span>CHECK</span></div><div class="mrow"><span>sample_001</span><span>Utility</span><span class="ok">Verified</span></div><div class="mrow"><span>sample_002</span><span>Mining</span><span class="warn">Review</span></div><div class="mrow"><span>sample_003</span><span>Energy</span><span class="ok">Verified</span></div></div>`;
+ if (type==='pipeline') body=`<div class="mini-table"><div class="mrow mhead"><span>EIA SOURCE</span><span>JOIN KEY</span><span>OUTPUT</span></div><div class="mrow"><span>Utility</span><span>Utility ID</span><span>6,946 accounts</span></div><div class="mrow"><span>Ownership</span><span>Owner ID</span><span>2,047 owners</span></div><div class="mrow"><span>Linked</span><span>Exact IDs</span><span>313 matches</span></div></div>`;
  if (type==='report') body=`<div class="report-visual"><div class="report-top"><span>REPORT ENGINE</span><span>SQL → .NET</span></div><div class="bargraph"><span style="height:44%"></span><span style="height:70%"></span><span style="height:53%"></span><span style="height:84%"></span><span style="height:65%"></span><span style="height:93%"></span><span style="height:72%"></span></div><div class="report-bottom"><span>QUERY</span><span>RECONCILE</span><span>EXPORT</span></div></div>`;
  return `<div class="project-visual v-${type}${small?' visual-small':''}" aria-label="Illustrative ${escapeHTML(label.toLowerCase())} diagram"><div class="visual-top"><span class="visual-dot"></span><span>${label}</span><span class="visual-plus">+</span></div>${body}<span class="visual-watermark">ILLUSTRATIVE</span></div>`;
 }
@@ -53,7 +54,7 @@ export function projectCard(p, opts={}) {
   <div class="project-card-body"><div class="project-meta"><span>${escapeHTML(p.category)}</span><span>${escapeHTML(p.period)}</span></div>
   <h3><a href="${href('/projects/'+p.slug+'/')}">${escapeHTML(p.shortTitle||p.title)} <span class="inline-arrow" aria-hidden="true">↗</span></a></h3>
   <p>${escapeHTML(p.intro)}</p>
-  <div class="project-card-bottom"><span class="provenance"><span class="provenance-dot"></span> Anonymized professional work</span><span class="circle-arrow" aria-hidden="true">↗</span></div></div>
+  <div class="project-card-bottom"><span class="provenance"><span class="provenance-dot"></span> ${p.context.startsWith('Independent')?'Independent public project':'Anonymized professional work'}</span><span class="circle-arrow" aria-hidden="true">↗</span></div></div>
  </article>`;
 }
 

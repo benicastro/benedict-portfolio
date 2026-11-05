@@ -94,5 +94,68 @@
     "result": "Maintained and improved data-heavy enterprise reporting workflows. Proprietary source code, application screenshots, and client records remain private.",
     "visual": "report",
     "feature": true
+  },
+  {
+    "slug": "energy-account-intelligence-pipeline",
+    "order": 5,
+    "title": "Energy Account Intelligence Pipeline",
+    "shortTitle": "Energy account intelligence pipeline",
+    "category": "Python Data Engineering & Account Intelligence",
+    "categoryId": "research",
+    "period": "2026",
+    "context": "Independent portfolio project · Public repository",
+    "intro": "A reproducible Python pipeline processing public U.S. energy records into auditable account intelligence, preliminary ICP tiers, and source-linked generator ownership evidence.",
+    "challenge": "A utility's reported plant association does not establish ownership, and an owner absent from the utility master must not be treated as owning no assets. Turning raw government workbooks into usable account intelligence requires careful source joins, explicit quality checks, and traceable targeting decisions.",
+    "role": "Independently designed and built the Python ingestion, transformation, source-ID matching, ownership analysis, preliminary ICP rules, CSV/JSON exports, and automated tests. Published the code, documentation, and a small reproducible sample.",
+    "approach": [
+      {
+        "label": "Normalize EIA records",
+        "detail": "Read 2025 EIA-860 workbooks directly from the annual ZIP, standardize 6,946 utility account records, and count distinct plant associations."
+      },
+      {
+        "label": "Apply explainable classification",
+        "detail": "Use official EIA entity-type definitions and project-defined screening rules to assign preliminary ICP tiers, with per-record rationale and basic quality flags."
+      },
+      {
+        "label": "Resolve generator ownership",
+        "detail": "Analyze 5,680 ownership rows using Ownership ID instead of reporting Utility ID; identify 2,047 distinct owners, including 313 owner IDs matched to the account master."
+      },
+      {
+        "label": "Validate and publish evidence",
+        "detail": "Preserve 1,734 unmatched owners, flag ownership-share exceptions, reconcile exports, test with fictional fixtures, and provide a 24-row public sample and GitHub Actions CI."
+      }
+    ],
+    "technologies": [
+      "Python 3.12",
+      "pandas",
+      "openpyxl",
+      "pytest",
+      "GitHub Actions",
+      "CSV / JSON",
+      "ETL",
+      "Entity resolution"
+    ],
+    "deliverables": [
+      "Public source code and 72 automated tests",
+      "Audited account, ownership, and linkage reports",
+      "Reproducible 24-record sample CSV with documented limitations"
+    ],
+    "result": "Processed 6,946 utility accounts and 5,680 generator-ownership records; linked 313 ownership entities to the account master and preserved 1,734 unmatched owners for research. The outputs are screening and evidence artifacts, not verified sales-qualified leads or CRM-approved imports.",
+    "visual": "pipeline",
+    "feature": true,
+    "links": [
+      {
+        "label": "Source code & documentation",
+        "url": "https://github.com/benicastro/energy-account-intelligence-pipeline"
+      },
+      {
+        "label": "Public sample dataset",
+        "url": "https://github.com/benicastro/energy-account-intelligence-pipeline/tree/master/samples"
+      },
+      {
+        "label": "Automated test workflow",
+        "url": "https://github.com/benicastro/energy-account-intelligence-pipeline/actions/workflows/tests.yml"
+      }
+    ]
   }
 ]
