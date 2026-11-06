@@ -1,197 +1,5 @@
 [
   {
-    "slug": "public-web-data-collection",
-    "order": 2,
-    "title": "Public web and platform data collection",
-    "shortTitle": "Web & platform data collection",
-    "category": "Web Scraping & Automation",
-    "categoryId": "python",
-    "period": "2023–2025",
-    "context": "Professional experience · Anonymized",
-    "intro": "Investigating public web and online-platform data structures, evaluating extraction approaches, and organizing collected information into documented datasets.",
-    "challenge": "Public web interfaces are inconsistent. Useful information may appear in rendered pages, embedded JSON, or available API responses, with changes in page structure and missing fields requiring careful handling.",
-    "role": "Built and tested Python-supported collection workflows; inspected web requests and data structures; prepared structured outputs and documented the approach, test cases, and edge cases.",
-    "approach": [
-      {
-        "label": "Inspect the source",
-        "detail": "Review public page structures, browser network activity, and available JSON or API responses before choosing an extraction approach."
-      },
-      {
-        "label": "Collect deliberately",
-        "detail": "Use Python HTTP or browser-based workflows as appropriate to the source and task constraints."
-      },
-      {
-        "label": "Shape the output",
-        "detail": "Transform collected fields into consistent tabular records suitable for downstream review."
-      },
-      {
-        "label": "Document uncertainty",
-        "detail": "Record method assumptions, edge cases, and testing considerations rather than treating missing data as verified."
-      }
-    ],
-    "technologies": [
-      "Python",
-      "requests",
-      "BeautifulSoup",
-      "Selenium",
-      "JSON",
-      "pandas",
-      "Browser DevTools"
-    ],
-    "deliverables": [
-      "Documented extraction workflows",
-      "CSV and tabular research outputs",
-      "Collection logic and edge-case notes"
-    ],
-    "result": "Prepared structured research outputs and reusable methodology documentation for downstream review and analysis. No confidential code, source records, or quantitative client outcomes are published here.",
-    "visual": "code",
-    "feature": true
-  },
-  {
-    "slug": "regulated-industry-account-intelligence",
-    "order": 3,
-    "title": "Regulated-industry account intelligence",
-    "shortTitle": "ICP & account intelligence",
-    "category": "B2B Research & Sales Intelligence",
-    "categoryId": "research",
-    "period": "2025–present",
-    "context": "Professional experience · Anonymized",
-    "intro": "Converting industry-specific ICP requirements into defensible company and decision-maker research across energy, utilities, mining, infrastructure, and related regulated sectors.",
-    "challenge": "Generic company directories rarely capture the full picture of regulated industries. Identifying relevant asset owners, regulators, projects, and responsible decision-makers requires combining specialized public sources with clear inclusion and exclusion rules.",
-    "role": "Researched target accounts and professional roles; classified companies by sector and geography; added source notes, fit rationale, and review flags; organized segmented prospect lists.",
-    "approach": [
-      {
-        "label": "Translate the ICP",
-        "detail": "Define target industries, company types, geography, seniority, functions, and explicit exclusions."
-      },
-      {
-        "label": "Map authoritative sources",
-        "detail": "Review company websites, agency and regulatory records, industry associations, and relevant event materials."
-      },
-      {
-        "label": "Resolve account fit",
-        "detail": "Differentiate operating companies, regulators, advisors, and unrelated vendors; document the reasoning behind each classification."
-      },
-      {
-        "label": "Prepare for activation",
-        "detail": "Structure target accounts and contacts with traceable sources, prioritization tiers, and fields suitable for enrichment or CRM review."
-      }
-    ],
-    "technologies": [
-      "ICP segmentation",
-      "Open-source research",
-      "Regulatory sources",
-      "LinkedIn research",
-      "Apollo inputs",
-      "Google Sheets"
-    ],
-    "deliverables": [
-      "Segmented company and contact lists",
-      "ICP rationale and prioritization fields",
-      "Source-backed review notes"
-    ],
-    "result": "Produced organized, source-backed prospect research for targeting and review workflows. Client-specific names, datasets, outreach details, and performance metrics are not disclosed.",
-    "visual": "network",
-    "feature": true
-  },
-  {
-    "slug": "crm-data-enrichment-quality",
-    "order": 5,
-    "title": "CRM-ready enrichment and data quality",
-    "shortTitle": "CRM data quality workflows",
-    "category": "Data Processing & CRM Operations",
-    "categoryId": "crm",
-    "period": "2025–present",
-    "context": "Professional experience · Anonymized",
-    "intro": "Turning incomplete or inconsistent account and contact research into standardized, source-backed files prepared for enrichment review and CRM import.",
-    "challenge": "Records from websites, directories, event lists, and data vendors can conflict in naming, categorization, geography, or completeness. Uploading them without validation creates duplicates and uncertainty downstream.",
-    "role": "Researched missing account attributes, standardized fields, flagged duplicate or uncertain records, and prepared HubSpot-ready import structures and Apollo enrichment inputs.",
-    "approach": [
-      {
-        "label": "Define a clear schema",
-        "detail": "Separate account fields, contact attributes, ICP classifications, and source/quality metadata."
-      },
-      {
-        "label": "Normalize fields",
-        "detail": "Standardize company names, websites, geographic labels, role categories, and format conventions."
-      },
-      {
-        "label": "Verify and flag",
-        "detail": "Cross-check source conflicts, identify candidate duplicates, and explicitly preserve unknown or unverified fields."
-      },
-      {
-        "label": "Package handoffs",
-        "detail": "Organize CSV and Google Sheets outputs for review, enrichment, and HubSpot-compatible importing."
-      }
-    ],
-    "technologies": [
-      "HubSpot-ready CSV",
-      "Apollo enrichment",
-      "Google Sheets",
-      "Python",
-      "pandas",
-      "SQL",
-      "Deduplication"
-    ],
-    "deliverables": [
-      "Cleaned and standardized account/contact files",
-      "HubSpot-ready import formats",
-      "Validation flags and audit columns"
-    ],
-    "result": "Delivered structured, reviewable data handoffs designed to make enrichment and CRM ingestion more reliable. Sample records shown elsewhere on this website are fictional demonstration data.",
-    "visual": "table",
-    "feature": false
-  },
-  {
-    "slug": "dotnet-sql-reporting-engineering",
-    "order": 4,
-    "title": ".NET and SQL reporting engineering",
-    "shortTitle": ".NET & SQL reporting",
-    "category": "Software Development",
-    "categoryId": "software",
-    "period": "2023–2026",
-    "context": "Professional experience · Anonymized",
-    "intro": "Developing and maintaining data-intensive ASP.NET MVC application features, SQL Server reporting logic, and PDF/Excel exports governed by business rules.",
-    "challenge": "Enterprise reporting must reconcile database queries, application filters, totals, date ranges, edge cases, and exported output. Differences across these layers can produce inconsistent user-facing results.",
-    "role": "Developed and maintained C#/.NET features, SQL Server queries and stored procedures, dynamic UI behavior, and export workflows; investigated data discrepancies and bugs.",
-    "approach": [
-      {
-        "label": "Trace business logic",
-        "detail": "Understand how SQL queries, stored procedures, controller logic, and views contribute to a report or workflow."
-      },
-      {
-        "label": "Implement application changes",
-        "detail": "Work across ASP.NET MVC, C#, Razor, JavaScript, jQuery, and SQL Server components."
-      },
-      {
-        "label": "Align report outputs",
-        "detail": "Ensure PDF and Excel exports follow the same filter criteria, totals, dates, and business rules presented in the interface."
-      },
-      {
-        "label": "Test real edge cases",
-        "detail": "Investigate grouped records, legacy data, account identifiers, overages, adjustments, and payment-related scenarios."
-      }
-    ],
-    "technologies": [
-      "C#",
-      "ASP.NET MVC",
-      ".NET",
-      "SQL Server",
-      "JavaScript",
-      "jQuery",
-      "EPPlus",
-      "Git"
-    ],
-    "deliverables": [
-      "Application features and bug fixes",
-      "SQL reporting logic and stored procedures",
-      "PDF and Excel reporting outputs"
-    ],
-    "result": "Maintained and improved data-heavy enterprise reporting workflows. Proprietary source code, application screenshots, and client records remain private.",
-    "visual": "report",
-    "feature": true
-  },
-  {
     "slug": "energy-account-intelligence-pipeline",
     "order": 1,
     "title": "Energy Account Intelligence Pipeline",
@@ -255,8 +63,260 @@
     ]
   },
   {
-    "slug": "math-adventure-learning-app",
+    "slug": "ecommerce-restock-monitor",
+    "order": 2,
+    "title": "E-commerce Restock Monitor & Alerting System",
+    "shortTitle": "Shopee restock monitor",
+    "category": "Python Automation & Monitoring",
+    "categoryId": "python",
+    "period": "2026",
+    "context": "Independent portfolio project · Public repository",
+    "intro": "A Windows-based Python monitor that detects Shopee availability changes using Playwright, records stock transitions in SQLite, and alerts through Discord and normal-Chrome handoff.",
+    "challenge": "Limited-stock product listings can change quickly. Browser login redirects, incomplete responses, and repeated polling make it easy to miss changes or produce false alerts. The monitor needs to distinguish verified stock transitions from failed checks.",
+    "role": "Built and iterated on the Python monitoring workflow, persistent Playwright browser session, response parser, SQLite event history, Discord notifications, Windows handoff, and failure recovery. Reconstructed the public version and tested core behaviors on Windows.",
+    "approach": [
+      {
+        "label": "Capture product responses",
+        "detail": "Use a persistent Playwright Chromium context and a fresh page per check to observe the normal Shopee product-detail JSON response. Allow manual login through the same local browser profile."
+      },
+      {
+        "label": "Validate and persist stock",
+        "detail": "Verify the captured shop and item IDs, reject ambiguous stock information, and record INITIAL, SOLD_OUT, and RESTOCK transitions in SQLite without falsely treating missing data as sold out."
+      },
+      {
+        "label": "Alert and recover",
+        "detail": "Detect out-of-stock to in-stock transitions, send a Discord webhook, play an audible Windows alert, and open normal Chrome for manual checkout. Track consecutive failures and restart the browser after failed checks."
+      },
+      {
+        "label": "Test and document limits",
+        "detail": "Use Python unittest cases for parsing and state transitions, verify SQLite connection cleanup on Windows, and document login challenges, effective polling cadence, and notification limits."
+      }
+    ],
+    "technologies": [
+      "Python",
+      "Playwright",
+      "SQLite",
+      "Discord Webhooks",
+      "Windows API",
+      "unittest",
+      "JSON",
+      "Git"
+    ],
+    "deliverables": [
+      "Published Python source code, README, and automated tests",
+      "SQLite stock-event history, scheduled burst checks, and rotating logs",
+      "Discord alerts and sound/Chrome handoff for manual purchase"
+    ],
+    "result": "On a logged-in Windows session, the monitor captured two product-detail responses in about 4.1 seconds each and correctly recorded INITIAL followed by NO_CHANGE for an unavailable listing. Offline tests passed on Windows. Notification delivery is not guaranteed: failed Discord webhooks are not durably retried, availability is listing-level, and checkout remains manual.",
+    "visual": "code",
+    "feature": true,
+    "evidenceNote": "This is an independent Windows automation prototype. The offline tests use simulated Shopee responses; live product capture was observed on one Windows setup. Shopee may require login or verification. Alerts are not guaranteed or automatically retried, and the project does not bypass verification or automate checkout.",
+    "links": [
+      {
+        "label": "Source code and documentation",
+        "url": "https://github.com/benicastro/ecommerce-restock-monitor"
+      },
+      {
+        "label": "Offline unit tests",
+        "url": "https://github.com/benicastro/ecommerce-restock-monitor/blob/main/tests/test_core.py"
+      }
+    ]
+  },
+  {
+    "slug": "public-web-data-collection",
+    "order": 3,
+    "title": "Public web and platform data collection",
+    "shortTitle": "Web & platform data collection",
+    "category": "Web Scraping & Automation",
+    "categoryId": "python",
+    "period": "2023–2025",
+    "context": "Professional experience · Anonymized",
+    "intro": "Investigating public web and online-platform data structures, evaluating extraction approaches, and organizing collected information into documented datasets.",
+    "challenge": "Public web interfaces are inconsistent. Useful information may appear in rendered pages, embedded JSON, or available API responses, with changes in page structure and missing fields requiring careful handling.",
+    "role": "Built and tested Python-supported collection workflows; inspected web requests and data structures; prepared structured outputs and documented the approach, test cases, and edge cases.",
+    "approach": [
+      {
+        "label": "Inspect the source",
+        "detail": "Review public page structures, browser network activity, and available JSON or API responses before choosing an extraction approach."
+      },
+      {
+        "label": "Collect deliberately",
+        "detail": "Use Python HTTP or browser-based workflows as appropriate to the source and task constraints."
+      },
+      {
+        "label": "Shape the output",
+        "detail": "Transform collected fields into consistent tabular records suitable for downstream review."
+      },
+      {
+        "label": "Document uncertainty",
+        "detail": "Record method assumptions, edge cases, and testing considerations rather than treating missing data as verified."
+      }
+    ],
+    "technologies": [
+      "Python",
+      "requests",
+      "BeautifulSoup",
+      "Selenium",
+      "JSON",
+      "pandas",
+      "Browser DevTools"
+    ],
+    "deliverables": [
+      "Documented extraction workflows",
+      "CSV and tabular research outputs",
+      "Collection logic and edge-case notes"
+    ],
+    "result": "Prepared structured research outputs and reusable methodology documentation for downstream review and analysis. No confidential code, source records, or quantitative client outcomes are published here.",
+    "visual": "code",
+    "feature": true
+  },
+  {
+    "slug": "regulated-industry-account-intelligence",
+    "order": 4,
+    "title": "Regulated-industry account intelligence",
+    "shortTitle": "ICP & account intelligence",
+    "category": "B2B Research & Sales Intelligence",
+    "categoryId": "research",
+    "period": "2025–present",
+    "context": "Professional experience · Anonymized",
+    "intro": "Converting industry-specific ICP requirements into defensible company and decision-maker research across energy, utilities, mining, infrastructure, and related regulated sectors.",
+    "challenge": "Generic company directories rarely capture the full picture of regulated industries. Identifying relevant asset owners, regulators, projects, and responsible decision-makers requires combining specialized public sources with clear inclusion and exclusion rules.",
+    "role": "Researched target accounts and professional roles; classified companies by sector and geography; added source notes, fit rationale, and review flags; organized segmented prospect lists.",
+    "approach": [
+      {
+        "label": "Translate the ICP",
+        "detail": "Define target industries, company types, geography, seniority, functions, and explicit exclusions."
+      },
+      {
+        "label": "Map authoritative sources",
+        "detail": "Review company websites, agency and regulatory records, industry associations, and relevant event materials."
+      },
+      {
+        "label": "Resolve account fit",
+        "detail": "Differentiate operating companies, regulators, advisors, and unrelated vendors; document the reasoning behind each classification."
+      },
+      {
+        "label": "Prepare for activation",
+        "detail": "Structure target accounts and contacts with traceable sources, prioritization tiers, and fields suitable for enrichment or CRM review."
+      }
+    ],
+    "technologies": [
+      "ICP segmentation",
+      "Open-source research",
+      "Regulatory sources",
+      "LinkedIn research",
+      "Apollo inputs",
+      "Google Sheets"
+    ],
+    "deliverables": [
+      "Segmented company and contact lists",
+      "ICP rationale and prioritization fields",
+      "Source-backed review notes"
+    ],
+    "result": "Produced organized, source-backed prospect research for targeting and review workflows. Client-specific names, datasets, outreach details, and performance metrics are not disclosed.",
+    "visual": "network",
+    "feature": true
+  },
+  {
+    "slug": "dotnet-sql-reporting-engineering",
+    "order": 5,
+    "title": ".NET and SQL reporting engineering",
+    "shortTitle": ".NET & SQL reporting",
+    "category": "Software Development",
+    "categoryId": "software",
+    "period": "2023–2026",
+    "context": "Professional experience · Anonymized",
+    "intro": "Developing and maintaining data-intensive ASP.NET MVC application features, SQL Server reporting logic, and PDF/Excel exports governed by business rules.",
+    "challenge": "Enterprise reporting must reconcile database queries, application filters, totals, date ranges, edge cases, and exported output. Differences across these layers can produce inconsistent user-facing results.",
+    "role": "Developed and maintained C#/.NET features, SQL Server queries and stored procedures, dynamic UI behavior, and export workflows; investigated data discrepancies and bugs.",
+    "approach": [
+      {
+        "label": "Trace business logic",
+        "detail": "Understand how SQL queries, stored procedures, controller logic, and views contribute to a report or workflow."
+      },
+      {
+        "label": "Implement application changes",
+        "detail": "Work across ASP.NET MVC, C#, Razor, JavaScript, jQuery, and SQL Server components."
+      },
+      {
+        "label": "Align report outputs",
+        "detail": "Ensure PDF and Excel exports follow the same filter criteria, totals, dates, and business rules presented in the interface."
+      },
+      {
+        "label": "Test real edge cases",
+        "detail": "Investigate grouped records, legacy data, account identifiers, overages, adjustments, and payment-related scenarios."
+      }
+    ],
+    "technologies": [
+      "C#",
+      "ASP.NET MVC",
+      ".NET",
+      "SQL Server",
+      "JavaScript",
+      "jQuery",
+      "EPPlus",
+      "Git"
+    ],
+    "deliverables": [
+      "Application features and bug fixes",
+      "SQL reporting logic and stored procedures",
+      "PDF and Excel reporting outputs"
+    ],
+    "result": "Maintained and improved data-heavy enterprise reporting workflows. Proprietary source code, application screenshots, and client records remain private.",
+    "visual": "report",
+    "feature": true
+  },
+  {
+    "slug": "crm-data-enrichment-quality",
     "order": 6,
+    "title": "CRM-ready enrichment and data quality",
+    "shortTitle": "CRM data quality workflows",
+    "category": "Data Processing & CRM Operations",
+    "categoryId": "crm",
+    "period": "2025–present",
+    "context": "Professional experience · Anonymized",
+    "intro": "Turning incomplete or inconsistent account and contact research into standardized, source-backed files prepared for enrichment review and CRM import.",
+    "challenge": "Records from websites, directories, event lists, and data vendors can conflict in naming, categorization, geography, or completeness. Uploading them without validation creates duplicates and uncertainty downstream.",
+    "role": "Researched missing account attributes, standardized fields, flagged duplicate or uncertain records, and prepared HubSpot-ready import structures and Apollo enrichment inputs.",
+    "approach": [
+      {
+        "label": "Define a clear schema",
+        "detail": "Separate account fields, contact attributes, ICP classifications, and source/quality metadata."
+      },
+      {
+        "label": "Normalize fields",
+        "detail": "Standardize company names, websites, geographic labels, role categories, and format conventions."
+      },
+      {
+        "label": "Verify and flag",
+        "detail": "Cross-check source conflicts, identify candidate duplicates, and explicitly preserve unknown or unverified fields."
+      },
+      {
+        "label": "Package handoffs",
+        "detail": "Organize CSV and Google Sheets outputs for review, enrichment, and HubSpot-compatible importing."
+      }
+    ],
+    "technologies": [
+      "HubSpot-ready CSV",
+      "Apollo enrichment",
+      "Google Sheets",
+      "Python",
+      "pandas",
+      "SQL",
+      "Deduplication"
+    ],
+    "deliverables": [
+      "Cleaned and standardized account/contact files",
+      "HubSpot-ready import formats",
+      "Validation flags and audit columns"
+    ],
+    "result": "Delivered structured, reviewable data handoffs designed to make enrichment and CRM ingestion more reliable. Sample records shown elsewhere on this website are fictional demonstration data.",
+    "visual": "table",
+    "feature": false
+  },
+  {
+    "slug": "math-adventure-learning-app",
+    "order": 7,
     "title": "Math Adventure — Interactive Learning Web App",
     "shortTitle": "Math Adventure learning app",
     "category": "Software Development",
